@@ -1,8 +1,11 @@
 package com.company;
+import java.util.Scanner;
 
 public class Main {
 
     public static void main(String[] args) {
-        System.out.print("Hello World");
+        Scanner scanner = new Scanner(System.in);
+        System.out.print("Please choose between mathematical functions + - * / :");
+        char function = scanner.next().charAt(0);
     }
 }
