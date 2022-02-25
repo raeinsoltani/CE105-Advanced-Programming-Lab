@@ -11,7 +11,7 @@ public class Lab {
 
     private int currentSize;
 
-    private double avgGrade;
+    private double avgGrade = 0;
 
     public Lab(String teacherName, String dayOfWeek, int maxSize){
         this.teacherName = teacherName;
@@ -28,6 +28,22 @@ public class Lab {
         }
         else{
             System.out.println("Max Size of Lab Class has been reached!");
+        }
+    }
+
+    public void calAvg(){
+        for (int i = 0; i < currentSize; i++) {
+            avgGrade += students[i].getId();
+        }
+    }
+
+    public double getAvgGrade() {
+        if (avgGrade == 0){
+            System.out.println("Please Use calAvg method first, then recall this method");
+            return 0;
+        }
+        else{
+            return avgGrade;
         }
     }
 }
