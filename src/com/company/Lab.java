@@ -46,4 +46,48 @@ public class Lab {
             return avgGrade;
         }
     }
+
+    public Student[] getStudents() {
+        return students;
+    }
+
+    public void setStudents(Student[] students) {
+        this.students = students;
+    }
+
+    public String getTeacherName() {
+        return teacherName;
+    }
+
+    public void setTeacherName(String teacherName) {
+        this.teacherName = teacherName;
+    }
+
+    public String getDayOfWeek() {
+        return dayOfWeek;
+    }
+
+    public void setDayOfWeek(String dayOfWeek) {
+        this.dayOfWeek = dayOfWeek;
+    }
+
+    public int getMaxSize() {
+        return maxSize;
+    }
+
+    public void setMaxSize(int maxSize) {
+        this.maxSize = maxSize;
+    }
+
+    public int getCurrentSize() {
+        return currentSize;
+    }
+
+    public void setCurrentSize(int currentSize) {
+        this.currentSize = currentSize;
+    }
+
+    public void setAvgGrade(double avgGrade) {
+        this.avgGrade = avgGrade;
+    }
 }
