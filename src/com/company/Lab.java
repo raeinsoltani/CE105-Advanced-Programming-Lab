@@ -18,5 +18,16 @@ public class Lab {
         this.dayOfWeek = dayOfWeek;
         this.maxSize = maxSize;
         students = new Student[maxSize]; //Used for creating an array of students with max size.
+        currentSize = 0;
+    }
+
+    public void enrollStudent(Student student){
+        if (currentSize < maxSize){
+            students[currentSize] = student;
+            currentSize +=  1;
+        }
+        else{
+            System.out.println("Max Size of Lab Class has been reached!");
+        }
     }
 }
