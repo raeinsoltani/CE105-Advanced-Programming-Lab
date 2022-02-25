@@ -13,7 +13,12 @@ public class Student {
         this.firstname = firstname;
         this.lastname = lastname;
         this.id = id;
-        grade = 0;
+        grade = 0; //initial Grading Maybe Zero.
     }
 
+    public void printStudentInfo(){//prints student info in this class.
+        System.out.println(firstname + " " + lastname
+        + "\nID: " + id
+        + "\nGRADE: " + grade);
+    }
 }
