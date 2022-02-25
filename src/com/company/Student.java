@@ -19,7 +19,8 @@ public class Student {
     public void printStudentInfo(){//prints student info in this class.
         System.out.println(firstname + " " + lastname
         + "\nID: " + id
-        + "\nGRADE: " + grade);
+        + "\nGRADE: " + grade
+        + "\n");
     }
 
     public String getFirstname() {
