@@ -31,6 +31,17 @@ public class Lab {
         }
     }
 
+    public void printLabInfo(){
+        System.out.println(teacherName+ "'s Lab");
+        System.out.println("Lab is held at: " + dayOfWeek + "'s\n");
+        System.out.println("Students How enrolled at lab are");
+        for (int i = 0; i < currentSize; i++) {
+            System.out.println(students[i].getFirstname()
+            + students[i].getLastname());
+        }
+    }
+
+
     public void calAvg(){
         for (int i = 0; i < currentSize; i++) {
             avgGrade += students[i].getId();
