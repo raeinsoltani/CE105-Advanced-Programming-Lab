@@ -45,5 +45,19 @@ public class Contact {
         this.lastName = lastName;
     }
 
+    public PhoneNumber getPhoneNumber() {
+        return phoneNumber;
+    }
 
+    public void setPhoneNumber(PhoneNumber phoneNumber) {
+        this.phoneNumber = phoneNumber;
+    }
+
+    public Address getAddress() {
+        return address;
+    }
+
+    public void setAddress(Address address) {
+        this.address = address;
+    }
 }
