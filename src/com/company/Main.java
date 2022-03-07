@@ -67,7 +67,10 @@ public class Main {
                 }
             }
             else if (inputs[0].equals("show")){
-                if (inputs[1].equals("-g")){
+                if (inputs.length == 1){
+                    phoneBook.printContacts();
+                }
+                else if (inputs[1].equals("-g")){
                     String group = inputs[2];
                     Contact[] contacts = phoneBook.findContacts(group);
                     int length = contacts.length;

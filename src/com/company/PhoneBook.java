@@ -60,16 +60,17 @@ public class PhoneBook {
     }
 
     public void printContacts(int i, Contact[] contacts){
-        for (int j = 0; j < i; j++) {
+        for (int j = 0; j < i - 1; j++) {
             System.out.print(contacts[j].getFirstName());
             System.out.print(" ");
             System.out.println(contacts[j].getLastName());
-
+            System.out.println(contacts[j].getEmail());
         }
     }
 
     public void printContact(Contact contact){
-        System.out.println(contact.getFirstName());
+        System.out.print(contact.getFirstName());
+        System.out.print(" ");
         System.out.println(contact.getLastName());
         System.out.println(contact.getGroup());
         System.out.println(contact.getEmail());

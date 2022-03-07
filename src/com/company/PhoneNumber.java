@@ -22,11 +22,16 @@ public class PhoneNumber {
     }
 
     public void setNumber(String number) {
-        if (number.length() == 12){
-            this.number = number;
-        }
-        else {
-            System.out.println("Number length should be exactly 12 characters");
+        while (true){
+            if (number.length() == 12){
+                this.number = number;
+                break;
+            }
+            else {
+                System.out.println("Number length should be exactly 12 characters");
+                System.out.println("Please Enter your number again!");
+            }
+
         }
     }
 }
