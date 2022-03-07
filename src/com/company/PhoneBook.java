@@ -61,9 +61,9 @@ public class PhoneBook {
 
     public void printContacts(int i, Contact[] contacts){
         for (int j = 0; j < i; j++) {
-            System.out.print(contacts[i].getFirstName());
+            System.out.print(contacts[j].getFirstName());
             System.out.print(" ");
-            System.out.println(contacts[i].getLastName());
+            System.out.println(contacts[j].getLastName());
 
         }
     }
