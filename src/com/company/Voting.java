@@ -33,5 +33,23 @@ public class Voting {
         }
     }
 
+    public void printResults(){
+        for (String key : choices.keySet()){
+            HashSet<Vote> value = choices.get(key);
+            int size = value.size();
+            System.out.println(key + ": " + size);
+        }
+    }
+
+    public void printVoters(){
+        for (String key : choices.keySet()){
+            System.out.println("Choice: " + key);
+            HashSet<Vote> value = choices.get(key);
+            for (Vote vote : value){
+                System.out.print(vote.getVoter() + " ");
+            }
+        }
+    }
+
 
 }
