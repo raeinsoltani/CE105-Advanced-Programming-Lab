@@ -13,5 +13,8 @@ public class Vote {
         return date;
     }
 
-
+    public Vote(Person voter, String date) {
+        this.voter = voter;
+        this.date = date;
+    }
 }
