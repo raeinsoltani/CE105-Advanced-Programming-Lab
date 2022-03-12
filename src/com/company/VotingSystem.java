@@ -19,5 +19,8 @@ public class VotingSystem {
         return votingList.get(index);
     }
 
+    public ArrayList<Voting> getVotingList(){
+        return votingList;
+    }
 
 }
