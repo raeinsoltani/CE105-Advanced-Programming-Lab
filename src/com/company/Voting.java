@@ -3,6 +3,7 @@ package com.company;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.HashSet;
+import java.util.Random;
 
 public class Voting {
     private int type;
@@ -33,6 +34,15 @@ public class Voting {
         }
     }
 
+    public void vote(Person voter){
+        Random random = new Random();
+        ArrayList<String> random_choices = new ArrayList<String>();
+        for (String key: choices.keySet()){
+            random_choices.add(key);
+        }
+        String choice = random_choices.get(random.nextInt(random_choices.size()));
+    }
+
     public void printResults(){
         for (String key : choices.keySet()){
             HashSet<Vote> value = choices.get(key);
@@ -60,4 +70,6 @@ public class Voting {
     public String getQuestion() {
         return question;
     }
+
+
 }
