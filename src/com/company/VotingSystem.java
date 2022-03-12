@@ -31,5 +31,14 @@ public class VotingSystem {
         votingList.get(index).printVoters();
     }
 
+    public void printVoting(int index){
+        System.out.println(votingList.get(index).getQuestion() + "\n");
+        ArrayList<String> choices =votingList.get(index).getChoices();
+
+        for(String choice : choices){
+            System.out.println(choice);
+        }
+    }
+
 
 }
