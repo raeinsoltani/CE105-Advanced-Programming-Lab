@@ -44,5 +44,7 @@ public class VotingSystem {
         votingList.get(index).vote(voter, choices);
     }
 
-    public
+    public void vote(int index, Person voter){
+        votingList.get(index).vote(voter);
+    }
 }
