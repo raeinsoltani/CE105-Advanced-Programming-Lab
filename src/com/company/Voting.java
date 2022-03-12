@@ -51,5 +51,9 @@ public class Voting {
         }
     }
 
-
+    public Voting(int type, String question, boolean isAnonymous){
+        this.type = type;
+        this.question = question;
+        this.isAnonymous = isAnonymous;
+    }
 }
