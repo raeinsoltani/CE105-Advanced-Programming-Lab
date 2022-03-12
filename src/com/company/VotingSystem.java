@@ -13,6 +13,11 @@ public class VotingSystem {
         for (String choice : choices){
             voting.createChoice(choice);
         }
-
     }
+
+    public Voting getVoting(int index){
+        return votingList.get(index);
+    }
+
+
 }
