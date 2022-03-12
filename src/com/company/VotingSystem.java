@@ -23,4 +23,13 @@ public class VotingSystem {
         return votingList;
     }
 
+    public void printResults(int index){
+        votingList.get(index).printResults();
+    }
+
+    public void printVoters(int index){
+        votingList.get(index).printVoters();
+    }
+
+
 }
