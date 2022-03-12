@@ -9,7 +9,7 @@ public class VotingSystem {
                               boolean isAnonymous,
                               int type,
                               ArrayList<String> choices){
-        Voting voting = new Voting();
+        Voting voting = new Voting(type, question, isAnonymous);
         for (String choice : choices){
             voting.createChoice(choice);
         }
